@@ -10,6 +10,8 @@
 &mt {
     //  flavor = "tap-preferred";
     // tapping-term-ms = <200>;
+
+    flavor = "tap-unless-interrupted";
 };
 
 / {
@@ -40,6 +42,15 @@
         };
     };
 
+    macros {
+        rustarrow: rustarrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp GT>;
+            label = "RUSTARROW";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -47,17 +58,17 @@
             bindings = <
 &kp Q             &kp W        &kp E  &kp R  &kp T    &kp Y  &kp U  &kp I      &kp O        &kp P
 &mt LEFT_SHIFT A  &kp S        &kp D  &kp F  &kp G    &kp H  &kp J  &kp K      &kp L        &mt RIGHT_SHIFT SEMICOLON
-&kp Z             &kp X        &kp C  &kp V  &kp B    &kp N  &kp M  &kp COMMA  &kp DOT      &kp SLASH
-&mt LCTRL TAB     &lt 1 SPACE                                                  &lt 2 ENTER  &kp BACKSPACE
+&mt LCTRL Z       &kp X        &kp C  &kp V  &kp B    &kp N  &kp M  &kp COMMA  &kp DOT      &mt RCTRL SLASH
+&mt LEFT_ALT TAB  &lt 1 SPACE                                                  &lt 2 ENTER  &mt LEFT_META BACKSPACE
             >;
         };
 
         left_layer {
             bindings = <
-&kp ESCAPE  &none      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPS            &kp PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK
-&kp TAB     &kp TILDE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE            &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH
-&kp DEL     &none      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SINGLE_QUOTE    &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH
-&none       &trans                                                                                                             &mo 3         &kp NUMBER_0
+&kp ESCAPE  &kp DOUBLE_QUOTES  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPS            &kp PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK
+&kp TAB     &kp TILDE          &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE            &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH
+&kp DEL     &rustarrow         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SINGLE_QUOTE    &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH
+&none       &trans                                                                                                                     &mo 3         &kp NUMBER_0
             >;
         };
 
@@ -72,10 +83,10 @@
 
         tri_layer {
             bindings = <
-&none  &none   &none  &none  &to 4    &kp C_VOLUME_UP    &kp C_NEXT        &none  &none   &none
-&none  &none   &none  &none  &none    &kp C_VOLUME_DOWN  &kp C_PREV        &none  &none   &none
-&none  &none   &none  &none  &none    &kp C_MUTE         &kp C_PLAY_PAUSE  &none  &none   &none
-&none  &trans                                                                     &trans  &none
+&sys_reset  &none   &none  &none  &to 4    &kp C_VOLUME_UP    &kp C_NEXT        &none  &none   &none
+&none       &none   &none  &none  &none    &kp C_VOLUME_DOWN  &kp C_PREV        &none  &none   &none
+&none       &none   &none  &none  &none    &kp C_MUTE         &kp C_PLAY_PAUSE  &none  &none   &none
+&none       &trans                                                                     &trans  &none
             >;
         };
 
