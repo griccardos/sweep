@@ -11,7 +11,7 @@
     //  flavor = "tap-preferred";
     // tapping-term-ms = <200>;
 
-    flavor = "tap-unless-interrupted";
+    flavor = "balanced";
 };
 
 / {
@@ -56,10 +56,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W        &kp E  &kp R  &kp T    &kp Y  &kp U  &kp I      &kp O        &kp P
+&mt LEFT_ALT Q    &kp W        &kp E  &kp R  &kp T    &kp Y  &kp U  &kp I      &kp O        &kp P
 &mt LEFT_SHIFT A  &kp S        &kp D  &kp F  &kp G    &kp H  &kp J  &kp K      &kp L        &mt RIGHT_SHIFT SEMICOLON
 &mt LCTRL Z       &kp X        &kp C  &kp V  &kp B    &kp N  &kp M  &kp COMMA  &kp DOT      &mt RCTRL SLASH
-&mt LEFT_ALT TAB  &lt 1 SPACE                                                  &lt 2 ENTER  &mt LEFT_META BACKSPACE
+&kp TAB           &lt 1 SPACE                                                  &lt 2 ENTER  &mt LEFT_META BACKSPACE
             >;
         };
 
