@@ -12,6 +12,7 @@
     // tapping-term-ms = <200>;
 
     flavor = "balanced";
+    quick-tap-ms = <200>;
 };
 
 / {
@@ -24,16 +25,10 @@
             bindings = <&kp ESC>;
         };
 
-        combo_alt {
-            timeout-ms = <50>;
-            key-positions = <2 3>;
-            bindings = <&kp LEFT_ALT>;
-        };
-
-        combo_lgui {
+        meta_shift {
             timeout-ms = <50>;
             key-positions = <12 13>;
-            bindings = <&kp LGUI>;
+            bindings = <&sk LS(LEFT_META)>;
         };
 
         caps_word {
@@ -74,10 +69,10 @@
 
         right_layer {
             bindings = <
-&kp ESCAPE  &kp F7  &kp F8  &kp F9  &kp F10    &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END    &sk LEFT_ALT
-&kp TAB     &kp F4  &kp F5  &kp F6  &kp F11    &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &kp LEFT_META
-&kp DEL     &kp F1  &kp F2  &kp F3  &kp F12    &none          &none     &none         &none      &sk RCTRL
-&none       &mo 3                                                                     &trans     &none
+&kp ESCAPE  &kp F7  &kp F8  &kp F9  &kp F10    &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END             &sk LEFT_ALT
+&kp TAB     &kp F4  &kp F5  &kp F6  &kp F11    &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT           &kp LEFT_META
+&kp DEL     &kp F1  &kp F2  &kp F3  &kp F12    &none          &none     &none         &kp K_CONTEXT_MENU  &sk RCTRL
+&none       &mo 3                                                                     &trans              &none
             >;
         };
 
