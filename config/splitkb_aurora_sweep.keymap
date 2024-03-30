@@ -35,6 +35,11 @@
             bindings = <&caps_word>;
             key-positions = <10 19>;
         };
+
+        ctrl_shift {
+            bindings = <&kp LS(LCTRL)>;
+            key-positions = <16 17>;
+        };
     };
 
     macros {
@@ -60,7 +65,7 @@
 
         default_layer {
             bindings = <
-&mt LEFT_ALT Q    &kp W            &kp E  &kp R  &kp T    &kp Y  &kp U  &kp I      &kp O              &mt LEFT_ALT P
+&mt LEFT_ALT Q    &kp W            &kp E  &kp R  &kp T    &kp Y  &kp U  &kp I      &kp O              &mt RIGHT_ALT P
 &mt LEFT_SHIFT A  &kp S            &kp D  &kp F  &kp G    &kp H  &kp J  &kp K      &kp L              &mt RIGHT_SHIFT SEMICOLON
 &mt LCTRL Z       &mt LEFT_META X  &kp C  &kp V  &kp B    &kp N  &kp M  &kp COMMA  &mt LEFT_META DOT  &mt RCTRL SLASH
 &kp TAB           &lt 1 SPACE                                                      &lt 2 ENTER        &kp BACKSPACE
