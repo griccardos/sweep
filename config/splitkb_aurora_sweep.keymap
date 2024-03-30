@@ -46,6 +46,15 @@
         };
     };
 
+    behaviors {
+        tab_esc: tab_esc {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAB_ESC";
+            #binding-cells = <0>;
+            bindings = <&kp TAB>, <&kp ESCAPE>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -54,25 +63,25 @@
 &mt LEFT_ALT Q    &kp W            &kp E  &kp R  &kp T    &kp Y  &kp U  &kp I      &kp O              &mt LEFT_ALT P
 &mt LEFT_SHIFT A  &kp S            &kp D  &kp F  &kp G    &kp H  &kp J  &kp K      &kp L              &mt RIGHT_SHIFT SEMICOLON
 &mt LCTRL Z       &mt LEFT_META X  &kp C  &kp V  &kp B    &kp N  &kp M  &kp COMMA  &mt LEFT_META DOT  &mt RCTRL SLASH
-&kp TAB           &lt 1 SPACE                                                      &lt 2 ENTER        &mt LEFT_META BACKSPACE
+&kp TAB           &lt 1 SPACE                                                      &lt 2 ENTER        &kp BACKSPACE
             >;
         };
 
         left_layer {
             bindings = <
-&kp ESCAPE  &kp GRAVE          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPS     &kp PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK
-&kp TAB     &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE     &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH
-&kp DEL     &kp APOS           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE    &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH
-&none       &trans                                                                                                              &mo 3         &kp NUMBER_0
+&kp ESCAPE      &kp GRAVE          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPS     &kp PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK
+&kp LEFT_SHIFT  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE     &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH
+&kp DEL         &kp APOS           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE    &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH
+&none           &trans                                                                                                              &mo 3         &kp NUMBER_0
             >;
         };
 
         right_layer {
             bindings = <
-&kp ESCAPE  &kp F7  &kp F8  &kp F9  &kp F10    &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END             &sk LEFT_ALT
-&kp TAB     &kp F4  &kp F5  &kp F6  &kp F11    &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT           &kp LEFT_META
-&kp DEL     &kp F1  &kp F2  &kp F3  &kp F12    &none          &none     &none         &kp K_CONTEXT_MENU  &sk RCTRL
-&none       &mo 3                                                                     &trans              &none
+&kp ESCAPE      &kp F7  &kp F8  &kp F9  &kp F10    &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END        &kp LEFT_ALT
+&kp LEFT_SHIFT  &kp F4  &kp F5  &kp F6  &kp F11    &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT      &kp RIGHT_SHIFT
+&kp DEL         &kp F1  &kp F2  &kp F3  &kp F12    &none          &none     &kp K_APP     &kp LEFT_META  &kp RCTRL
+&none           &mo 3                                                                     &trans         &none
             >;
         };
 
@@ -87,7 +96,7 @@
 
         gaming {
             bindings = <
-&kp ESC    &kp Q      &kp W  &kp E  &kp R    &trans  &trans  &trans  &trans  &trans
+&tab_esc   &kp Q      &kp W  &kp E  &kp R    &trans  &trans  &trans  &trans  &trans
 &kp TAB    &kp A      &kp S  &kp D  &kp F    &trans  &trans  &trans  &trans  &trans
 &kp LCTRL  &kp Z      &kp X  &kp C  &kp V    &trans  &trans  &trans  &trans  &trans
 &kp ENTER  &kp SPACE                                                 &to 0   &trans
