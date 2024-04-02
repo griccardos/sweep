@@ -40,6 +40,24 @@
             bindings = <&kp LS(LCTRL)>;
             key-positions = <16 17>;
         };
+
+        game1 {
+            bindings = <&kp NUMBER_1>;
+            key-positions = <0 30>;
+            layers = <4>;
+        };
+
+        game2 {
+            bindings = <&kp NUMBER_2>;
+            key-positions = <1 30>;
+            layers = <4>;
+        };
+
+        game3 {
+            bindings = <&kp NUMBER_3>;
+            key-positions = <2 30>;
+            layers = <4>;
+        };
     };
 
     macros {
@@ -65,10 +83,10 @@
 
         default_layer {
             bindings = <
-&mt LEFT_ALT Q    &kp W            &kp E  &kp R  &kp T    &kp Y  &kp U  &kp I      &kp O              &mt RIGHT_ALT P
-&mt LEFT_SHIFT A  &kp S            &kp D  &kp F  &kp G    &kp H  &kp J  &kp K      &kp L              &mt RIGHT_SHIFT SEMICOLON
-&mt LCTRL Z       &mt LEFT_META X  &kp C  &kp V  &kp B    &kp N  &kp M  &kp COMMA  &mt LEFT_META DOT  &mt RCTRL SLASH
-&kp TAB           &lt 1 SPACE                                                      &lt 2 ENTER        &kp BACKSPACE
+&kp Q             &kp W           &kp E        &kp R            &kp T    &kp Y  &kp U            &kp I        &kp O           &kp P
+&mt LEFT_SHIFT A  &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_META F  &kp G    &kp H  &mt LEFT_META J  &mt RCTRL K  &mt LEFT_ALT L  &mt RIGHT_SHIFT SEMICOLON
+&kp Z             &kp X           &kp C        &kp V            &kp B    &kp N  &kp M            &kp COMMA    &kp DOT         &kp SLASH
+&kp TAB           &lt 1 SPACE                                                                                 &lt 2 ENTER     &kp BACKSPACE
             >;
         };
 
@@ -83,9 +101,9 @@
 
         right_layer {
             bindings = <
-&kp ESCAPE      &kp F7  &kp F8  &kp F9  &kp F10    &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END        &kp LEFT_ALT
+&kp ESCAPE      &kp F7  &kp F8  &kp F9  &kp F10    &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END        &kp RCTRL
 &kp LEFT_SHIFT  &kp F4  &kp F5  &kp F6  &kp F11    &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT      &kp RIGHT_SHIFT
-&kp DEL         &kp F1  &kp F2  &kp F3  &kp F12    &none          &none     &kp K_APP     &kp LEFT_META  &kp RCTRL
+&kp DEL         &kp F1  &kp F2  &kp F3  &kp F12    &none          &none     &kp K_APP     &kp RIGHT_ALT  &kp GLOBE
 &none           &mo 3                                                                     &trans         &none
             >;
         };
