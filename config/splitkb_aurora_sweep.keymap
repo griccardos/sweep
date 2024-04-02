@@ -76,6 +76,13 @@
             #binding-cells = <0>;
             bindings = <&kp TAB>, <&kp ESCAPE>;
         };
+
+        tilde_grave: tilde_grave {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TILDE_GRAVE";
+            #binding-cells = <0>;
+            bindings = <&kp TILDE>, <&kp GRAVE>;
+        };
     };
 
     keymap {
@@ -92,10 +99,10 @@
 
         left_layer {
             bindings = <
-&kp ESCAPE      &kp GRAVE          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPS     &kp PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK
-&kp LEFT_SHIFT  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE     &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH
-&kp DEL         &kp APOS           &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE    &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH
-&none           &trans                                                                                                              &mo 3         &kp NUMBER_0
+&kp ESCAPE      &kp SINGLE_QUOTE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPS        &kp PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK
+&kp LEFT_SHIFT  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE        &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH
+&kp DEL         &kp UNDERSCORE     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &tilde_grave    &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH
+&none           &trans                                                                                                                 &mo 3         &kp NUMBER_0
             >;
         };
 
