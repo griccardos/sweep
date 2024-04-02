@@ -76,13 +76,6 @@
             #binding-cells = <0>;
             bindings = <&kp TAB>, <&kp ESCAPE>;
         };
-
-        tilde_grave: tilde_grave {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TILDE_GRAVE";
-            #binding-cells = <0>;
-            bindings = <&kp TILDE>, <&kp GRAVE>;
-        };
     };
 
     keymap {
@@ -99,19 +92,19 @@
 
         left_layer {
             bindings = <
-&kp ESCAPE      &kp SINGLE_QUOTE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPS        &kp PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK
-&kp LEFT_SHIFT  &kp DOUBLE_QUOTES  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE        &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH
-&kp DEL         &kp UNDERSCORE     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &tilde_grave    &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH
-&none           &trans                                                                                                                 &mo 3         &kp NUMBER_0
+&kp ESCAPE      &kp SINGLE_QUOTE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPS           &kp PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK
+&kp LEFT_SHIFT  &kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE           &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH
+&kp DEL         &kp UNDERSCORE     &kp LEFT_BRACE        &kp RIGHT_BRACE        &mt TILDE GRAVE    &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH
+&none           &trans                                                                                                                    &mo 3         &kp NUMBER_0
             >;
         };
 
         right_layer {
             bindings = <
-&kp ESCAPE      &kp F7  &kp F8  &kp F9  &kp F10    &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END        &kp RCTRL
-&kp LEFT_SHIFT  &kp F4  &kp F5  &kp F6  &kp F11    &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT      &kp RIGHT_SHIFT
-&kp DEL         &kp F1  &kp F2  &kp F3  &kp F12    &none          &none     &kp K_APP     &kp RIGHT_ALT  &kp GLOBE
-&none           &mo 3                                                                     &trans         &none
+&kp ESCAPE      &kp F7  &kp F8  &kp F9  &kp F10    &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END    &kp RCTRL
+&kp LEFT_SHIFT  &kp F4  &kp F5  &kp F6  &kp F11    &kp PAGE_DOWN  &kp LEFT  &kp DOWN      &kp RIGHT  &kp RIGHT_SHIFT
+&kp DEL         &kp F1  &kp F2  &kp F3  &kp F12    &none          &none     &kp K_APP     &none      &kp RALT
+&none           &mo 3                                                                     &trans     &none
             >;
         };
 
