@@ -49,6 +49,18 @@
             key-positions = <2 30>;
             layers = <4>;
         };
+
+        holdnum {
+            bindings = <&to 1>;
+            key-positions = <20 31>;
+            layers = <0>;
+        };
+
+        holdnav {
+            bindings = <&tog 2>;
+            key-positions = <20 32>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -94,17 +106,17 @@
             bindings = <
 &none           &none           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPS           &kp PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK
 &kp LEFT_SHIFT  &kp QUESTION    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE           &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH
-&kp DEL         &kp UNDERSCORE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &mt TILDE GRAVE    &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH
-&none           &trans                                                                                                                 &mo 3         &kp NUMBER_0
+&none           &kp UNDERSCORE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &mt TILDE GRAVE    &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH
+&tog 1          &trans                                                                                                                 &mo 3         &mt KP_DOT N0
             >;
         };
 
         right_layer {
             bindings = <
-&none           &kp F7           &kp F8        &kp F9           &kp F10    &kp PAGE_UP    &kp HOME   &kp UP_ARROW  &kp END    &kp RIGHT_ALT
-&kp LEFT_SHIFT  &mt LEFT_ALT F4  &mt LCTRL F5  &mt LEFT_GUI F6  &kp F11    &kp PAGE_DOWN  &kp LEFT   &kp DOWN      &kp RIGHT  &kp RIGHT_SHIFT
-&none           &kp F1           &kp F2        &kp F3           &kp F12    &none          &mkp LCLK  &kp K_APP     &mkp RCLK  &none
-&none           &mo 3                                                                                              &trans     &none
+&none           &kp F7        &kp F8           &kp F9           &kp F10    &kp PAGE_UP    &kp HOME   &kp UP_ARROW  &kp END    &kp RIGHT_ALT
+&kp LEFT_SHIFT  &mt LCTRL F4  &mt LEFT_ALT F5  &mt LEFT_GUI F6  &kp F11    &kp PAGE_DOWN  &kp LEFT   &kp DOWN      &kp RIGHT  &kp RIGHT_SHIFT
+&none           &kp F1        &kp F2           &kp F3           &kp F12    &none          &mkp LCLK  &kp K_APP     &mkp RCLK  &none
+&none           &mo 3                                                                                              &trans     &tog 2
             >;
         };
 
