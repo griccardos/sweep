@@ -11,8 +11,7 @@
 
 ## Layout
 
- ![image](https://github.com/griccardos/sweep/assets/30464685/33c0016c-4c7a-44ef-8277-533c0c108373)
-
+![image](https://github.com/griccardos/sweep/assets/30464685/33c0016c-4c7a-44ef-8277-533c0c108373)
 
 The starting point uses standard qwerty layout.
 
@@ -24,7 +23,7 @@ Navigation layer with inverted T arrow keys and function keys
 
 ## Alpha keys
 
-Same format as standard keyboard, with only exception of replacing /(?) with '(") which I use more often
+Same format as standard keyboard
 
 ## Thumbs
 
@@ -44,10 +43,14 @@ Gui on index finger
 
 ## Symbol layer
 
-Numpad on the right side of the keyboard together with +-\*/= close by
-Symbols are behind the numbers so you can shift to get the symbols
-brackets are in a nice order on the left side
-Few extras often used are also added, including the question mark which was moved
+Numpad on the right side of the keyboard together with +- \*/ \= close by
+
+Symbols are behind the numbers so you can shift to get the symbols. These use the same symbols as the number row on a standard keyboard
+
+Brackets are in a nice order on the left side
+
+Other missing symbol keys are also added, such as programming & and |, " and ' and \_
+
 
 ## Navigation layer
 
@@ -55,14 +58,24 @@ Inverted T arrow keys
 Home End Page Up and Page Down on right hand
 Function keys on left hand
 
-## Other
+## Other additions
 
 There is also a media layer and gaming layer which is sometimes used
 
 Homerow mods make multiple mods shortcuts easier to press e.g. vscode CTRL+SHIFT+P or META+SHIFT+P; excel CTRL+SHIFT+7
 
-ESCAPE is on j+k
+ESCAPE is on j+k, or holding Q
 
 CAPS_WORD is on l+;
 
 DELETE is on SHIFT+BACKSPACE
+
+There is a lock layer for numpad and symbol layer, by pressing Z+Layer, which locks you into the layer until you press the thumb next to the layer key. This allows for inputting numbers and navigating without holding layer key.
+
+## One hand left / mouse mode
+
+When using the mouse for scrolling, navigating, we can still use some typically used shortcuts with the left hand:
+
+- hold Q for escape
+- ctrl+c copy, ctrl+v paste, ctrl+z undo. Hence why ctrl is on the ring finger. We do sacrifice ctrl+x cut which is not used as much.
+- alt+tab for switching windows
