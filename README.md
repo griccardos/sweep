@@ -10,8 +10,8 @@
   - lots of excel
 
 ## Layout
+![image](https://github.com/griccardos/sweep/assets/30464685/610755bd-9b6b-45b9-95fc-97612d759126)
 
-![image](https://github.com/griccardos/sweep/assets/30464685/33c0016c-4c7a-44ef-8277-533c0c108373)
 
 The starting point uses standard qwerty layout.
 
