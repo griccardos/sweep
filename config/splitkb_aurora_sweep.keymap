@@ -107,7 +107,7 @@
             bindings = <
 &none           &kp SINGLE_QUOTE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPS           &kp PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK
 &kp LEFT_SHIFT  &kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE           &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH
-&none           &kp UNDERSCORE     &kp LEFT_BRACE        &kp RIGHT_BRACE        &mt TILDE GRAVE    &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH
+&kp BACKSLASH   &kp UNDERSCORE     &kp LEFT_BRACE        &kp RIGHT_BRACE        &mt TILDE GRAVE    &kp EQUAL  &kp N1        &kp NUMBER_2  &kp NUMBER_3  &kp ENTER
 &tog 1          &trans                                                                                                                    &mo 3         &mt KP_DOT N0
             >;
         };
