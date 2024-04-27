@@ -11,7 +11,6 @@
 
 ## Layout
 
-![image](keymap.png)
 
 The starting point uses standard qwerty layout.
 
