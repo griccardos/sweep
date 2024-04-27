@@ -26,19 +26,19 @@ Same format as standard keyboard
 
 ## Thumbs
 
-Space and symbol layer (hold) on left thumb
-Tab on other left them
+Space and symbol layer (hold) on left thumb  
+Tab on other left thumb
 
-Enter and navigation layer (hold) on right thumb
+Enter and navigation layer (hold) on right thumb  
 Backspace/delete on other right thumb
 
 ## Homerow mods
 
-Similar order as standard keyboard.
-Shift on pinky
-Ctrl on ring finger
-Alt on middle finger
-Gui on index finger
+Similar order as standard keyboard.  
+Shift on pinky  
+Ctrl on ring finger  
+Alt on middle finger  
+Gui on index finger  
 
 ## Symbol layer
 
@@ -48,14 +48,13 @@ Symbols are behind the numbers so you can shift to get the symbols. These use th
 
 Brackets are in a nice order on the left side
 
-Other missing symbol keys are also added, such as programming & and |, " and ' and \_
-
+Other missing symbol keys or highly used so we dont need shift are also added & | " ' _
 
 ## Navigation layer
 
-Inverted T arrow keys
-Home End Page Up and Page Down on right hand
-Function keys on left hand
+Inverted T arrow keys  
+Home End Page Up and Page Down on right hand  
+Function keys on left hand  
 
 ## Other additions
 
