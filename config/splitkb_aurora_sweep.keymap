@@ -34,19 +34,19 @@
         };
 
         game1 {
-            bindings = <&kp NUMBER_1>;
+            bindings = <&kp N1>;
             key-positions = <0 30>;
             layers = <4>;
         };
 
         game2 {
-            bindings = <&kp NUMBER_2>;
+            bindings = <&kp N2>;
             key-positions = <1 30>;
             layers = <4>;
         };
 
         game3 {
-            bindings = <&kp NUMBER_3>;
+            bindings = <&kp N3>;
             key-positions = <2 30>;
             layers = <4>;
         };
@@ -105,10 +105,10 @@
 
         left_layer {
             bindings = <
-&none           &kp SINGLE_QUOTE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPS           &kp PLUS   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ASTERISK
-&kp LEFT_SHIFT  &kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE           &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SLASH
-&kp BACKSLASH   &kp UNDERSCORE     &kp LEFT_BRACE        &kp RIGHT_BRACE        &mt TILDE GRAVE    &kp EQUAL  &kp N1        &kp NUMBER_2  &kp NUMBER_3  &kp ENTER
-&tog 1          &trans                                                                                                                    &mo 3         &mt KP_DOT N0
+&none           &kp SINGLE_QUOTE   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPS           &kp PLUS   &kp N7  &kp N8  &kp N9  &kp ASTERISK
+&kp LEFT_SHIFT  &kp DOUBLE_QUOTES  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE           &kp MINUS  &kp N4  &kp N5  &kp N6  &kp SLASH
+&kp BACKSLASH   &kp UNDERSCORE     &kp LEFT_BRACE        &kp RIGHT_BRACE        &mt TILDE GRAVE    &kp EQUAL  &kp N1  &kp N2  &kp N3  &kp ENTER
+&tog 1          &trans                                                                                                  &mo 3         &mt KP_DOT N0
             >;
         };
 
