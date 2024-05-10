@@ -1,4 +1,7 @@
 # https://keymap-drawer.streamlit.app
+# paste this in to config
+# then import https://github.com/griccardos/sweep/blob/main/config/splitkb_aurora_sweep.keymap
+
 draw_config:
   key_w: 60
   key_h: 56
@@ -196,14 +199,14 @@ parse_config:
     NON_US_HASH: "#"
     NUHS: "#"
     TILDE2: "~"
-    N1: {t:"1",s:"!"}
-    N2: {t:"2",s:"@"}
-    N3: {t:"3",s:"#"}
-    N4: {t:"4",s:"$"}
-    N5: {t:"5",s:"%"}
-    N6: {t:"6",s:"^"}
-    N7: {t:"7",s:"&"}
-    N8: {t:"8",s:"*"}
-    N9: {t:"9",s:"("}
-    N0: {t:"0",s:")"}
+    N1: { t:"1", s:"!" }
+    N2: { t:"2", s:"@" }
+    N3: { t:"3", s:"#" }
+    N4: { t:"4", s:"$" }
+    N5: { t:"5", s:"%" }
+    N6: { t:"6", s:"^" }
+    N7: { t:"7", s:"&" }
+    N8: { t:"8", s:"*" }
+    N9: { t:"9", s:"(" }
+    N0: { t:"0", s:")" }
   zmk_combos: {}

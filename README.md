@@ -10,7 +10,8 @@
   - lots of excel
 
 ## Layout
-![image](keymap.png)
+
+![image](keymap.svg)
 
 The starting point uses standard qwerty layout.
 
@@ -22,23 +23,23 @@ Navigation layer with inverted T arrow keys and function keys
 
 ## Alpha keys
 
-Same format as standard keyboard
+Same format as standard keyboard. Only difference is placing ' and " instead of ; and : on the base layer, as they are used more.
 
 ## Thumbs
 
-Space and symbol layer (hold) on left thumb  
+Space and symbol layer (hold) on left thumb
 Tab on other left thumb
 
-Enter and navigation layer (hold) on right thumb  
+Enter and navigation layer (hold) on right thumb
 Backspace/delete on other right thumb
 
 ## Homerow mods
 
-Similar order as standard keyboard.  
-Shift on pinky  
-Ctrl on ring finger  
-Alt on middle finger  
-Gui on index finger  
+Similar order as standard keyboard.
+Shift on pinky
+Ctrl on ring finger
+Alt on middle finger
+Gui on index finger
 
 ## Symbol layer
 
@@ -48,27 +49,30 @@ Symbols are behind the numbers so you can shift to get the symbols. These use th
 
 Brackets are in a nice order on the left side
 
-Other missing symbol keys or highly used so we dont need shift are also added & | " ' _
+Other missing symbol keys or highly used so we dont need shift are also added namely & | ; : \_ < > \\
 
 ## Navigation layer
 
-Inverted T arrow keys  
-Home End Page Up and Page Down on right hand  
-Function keys on left hand  
+Inverted T arrow keys
+Home End Page Up and Page Down on right hand
+Function keys on left hand
 
 ## Other additions
 
-There is also a media layer and gaming layer which is sometimes used
+There is also a media layer which is sometimes used
 
-Homerow mods make multiple mods shortcuts easier to press e.g. vscode CTRL+SHIFT+P or META+SHIFT+P; excel CTRL+SHIFT+7
+Homerow mods make multiple mods shortcuts easier to press e.g.
+
+- vscode CTRL+SHIFT+P or META+SHIFT+P
+- excel CTRL+SHIFT+7
 
 ESCAPE is on j+k, or holding Q
 
-CAPS_WORD is on l+;
+CAPS_WORD is on l+'
 
-DELETE is on SHIFT+BACKSPACE
+DELETE is on SHIFT+BACKSPACE or m+,
 
-There is a lock layer for numpad and symbol layer, by pressing Z+Layer, which locks you into the layer until you press the thumb next to the layer key. This allows for inputting numbers and navigating without holding layer key.
+There is a lock layer for numpad and symbol layer, which locks you into the layer until you release the layer key. This allows for inputting numbers and navigating without holding layer key.
 
 ## One hand left / mouse mode
 
