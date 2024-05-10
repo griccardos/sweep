@@ -413,12 +413,14 @@ svg.keymap { background-color: #000000; }</style>
 </g>
 <g transform="translate(644, 192)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">ENTER</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em">KP</tspan><tspan x="0" dy="1.2em">DOT</tspan>
+</text>
+<text x="0" y="24" class="key hold">ENTER</text>
 </g>
 <g transform="translate(224, 238)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">left</text>
-<text x="0" y="24" class="key hold">toggle</text>
+<text x="0" y="0" class="key tap">&amp;l1_l0</text>
 </g>
 <g transform="translate(280, 252)" class="key held keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
@@ -430,7 +432,6 @@ svg.keymap { background-color: #000000; }</style>
 <g transform="translate(448, 238)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">0</text>
-<text x="0" y="24" class="key hold">KP DOT</text>
 </g>
 </g>
 </g>
@@ -582,8 +583,7 @@ svg.keymap { background-color: #000000; }</style>
 </g>
 <g transform="translate(448, 238)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">right</text>
-<text x="0" y="24" class="key hold">toggle</text>
+<text x="0" y="0" class="key tap">&amp;l2_l0</text>
 </g>
 </g>
 </g>

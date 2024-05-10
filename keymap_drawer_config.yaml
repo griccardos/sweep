@@ -10,7 +10,7 @@ draw_config:
   combo_h: 26
   key_rx: 6.0
   key_ry: 6.0
-  dark_mode: true
+  dark_mode: auto
   n_columns: 1
   separate_combo_diagrams: false
   combo_diagrams_scale: 2
