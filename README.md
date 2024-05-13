@@ -43,7 +43,7 @@ Gui on index finger
 
 ## Symbol layer
 
-Numpad on the right side of the keyboard together with +- \*/ \= close by
+Numpad on the right side of the keyboard together with +- \*/ \=. close by
 
 Symbols are behind the numbers so you can shift to get the symbols. These use the same symbols as the number row on a standard keyboard
 
@@ -68,11 +68,11 @@ Homerow mods make multiple mods shortcuts easier to press e.g.
 
 ESCAPE is on j+k, or holding Q
 
-CAPS_WORD is on l+'
+CAPS_WORD is on l+' or on nav layer
 
 DELETE is on SHIFT+BACKSPACE or m+,
 
-There is a lock layer for numpad and symbol layer, which locks you into the layer until you release the layer key. This allows for inputting numbers and navigating without holding layer key.
+There is a lock layer for symbol layer, which locks you into the layer until you release the layer key. This allows for inputting numbers without holding layer key.
 
 ## One hand left / mouse mode
 
