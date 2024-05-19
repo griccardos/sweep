@@ -23,7 +23,7 @@ Navigation layer with inverted T arrow keys and function keys
 
 ## Alpha keys
 
-Same format as standard keyboard. Only difference is placing ' and " instead of ; and : on the base layer, as they are used more.
+Same format as standard keyboard.
 
 ## Thumbs
 
@@ -49,7 +49,7 @@ Symbols are behind the numbers so you can shift to get the symbols. These use th
 
 Brackets are in a nice order on the left side
 
-Other missing symbol keys or highly used so we dont need shift are also added namely & | ; : \_ < > \\
+Other missing symbol keys or highly used so we dont need shift are also added namely & | \_ < > \\
 
 ## Navigation layer
 
