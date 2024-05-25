@@ -24,7 +24,7 @@ Navigation layer with inverted T arrow keys and function keys
 ## Alpha keys
 
 Same format as standard keyboard.
-Replace semicolon with quote, and move semicolon and colon as shifted comma and full stop.
+Replace semicolon with quote, which moves to symbol layer.
 
 ## Thumbs
 
