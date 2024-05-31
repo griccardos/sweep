@@ -24,7 +24,6 @@ Navigation layer with inverted T arrow keys and function keys
 ## Alpha keys
 
 Same format as standard keyboard.
-Replace semicolon with quote, which moves to symbol layer.
 
 ## Thumbs
 
@@ -69,11 +68,11 @@ Homerow mods make multiple mods shortcuts easier to press e.g.
 
 ESCAPE is on j+k, or holding Q
 
-CAPS_WORD is on l+' or on nav layer
+CAPS_WORD is on y+u
 
 DELETE is on SHIFT+BACKSPACE or m+,
 
-There is a lock layer for symbol layer, which locks you into the layer until you release the layer key. This allows for inputting numbers without holding layer key.
+There is a lock layer for symbol/num layer, which locks you into the layer until you release the layer key. This allows for inputting numbers without holding layer key.
 
 ## One hand left / mouse mode
 
