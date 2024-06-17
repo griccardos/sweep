@@ -19,19 +19,19 @@
         caps_word {
             bindings = <&caps_word>;
             key-positions = <6 7>;
-            layers = <0 4>;
+            layers = <0>;
         };
 
         esc {
             bindings = <&kp ESCAPE>;
             key-positions = <16 17>;
-            layers = <0 4>;
+            layers = <0>;
         };
 
         del {
             bindings = <&kp DEL>;
             key-positions = <26 27>;
-            layers = <0 4>;
+            layers = <0>;
         };
 
         cmd_v {
@@ -55,12 +55,12 @@
     keymap {
         compatible = "zmk,keymap";
 
-        qwerty {
+        colemak {
             bindings = <
-&mt ESCAPE Q      &kp W               &kp E           &kp R            &kp T    &kp Y  &kp U             &kp I            &kp O                &kp P
-&mt LEFT_SHIFT A  &mt LEFT_CONTROL S  &mt LEFT_ALT D  &mt LEFT_META F  &kp G    &kp H  &mt RIGHT_META J  &mt RIGHT_ALT K  &mt RIGHT_CONTROL L  &mt RIGHT_SHIFT SEMI
-&kp Z             &kp X               &kp C           &kp V            &kp B    &kp N  &kp M             &kp COMMA        &kp DOT              &kp SLASH
-&lt 3 TAB         &lt 1 SPACE                                                                                             &lt 2 ENTER          &bsp_del
+&kp Q             &kp W        &kp F       &kp P           &kp B    &kp J  &kp L       &kp U       &kp Y        &kp SEMI
+&mt LEFT_SHIFT A  &mt LCTRL R  &mt LALT S  &mt LEFT_GUI T  &kp G    &kp M  &mt RGUI N  &mt RALT E  &mt RCTRL I  &mt RSHFT O
+&kp Z             &kp X        &kp C       &kp D           &kp V    &kp K  &kp H       &kp COMMA   &kp DOT      &kp FSLH
+&lt 3 TAB         &lt 1 SPACE                                                                      &lt 2 ENTER  &bsp_del
             >;
         };
 
@@ -77,7 +77,7 @@
             bindings = <
 &none           &kp F7               &kp F8           &kp F9           &kp F10    &kp PAGE_UP    &kp HOME   &kp UP     &kp END    &tog 0
 &kp LEFT_SHIFT  &mt LEFT_CONTROL F4  &mt LEFT_ALT F5  &mt LEFT_GUI F6  &kp F11    &kp PAGE_DOWN  &kp LEFT   &kp DOWN   &kp RIGHT  &tog 1
-&none           &kp F1               &kp F2           &kp F3           &kp F12    &none          &mkp LCLK  &kp K_APP  &mkp RCLK  &tog 4
+&none           &kp F1               &kp F2           &kp F3           &kp F12    &none          &mkp LCLK  &kp K_APP  &mkp RCLK  &none
 &none           &none                                                                                                  &trans     &none
             >;
         };
@@ -88,15 +88,6 @@
 &none       &none           &none  &none  &none    &kp C_VOLUME_DOWN  &kp C_PREV        &none  &none   &none
 &none       &none           &none  &none  &none    &kp C_MUTE         &kp C_PLAY_PAUSE  &none  &none   &none
 &none       &trans                                                                             &trans  &none
-            >;
-        };
-
-        colemak {
-            bindings = <
-&kp Q             &kp W        &kp F       &kp P           &kp B    &kp J  &kp L       &kp U       &kp Y        &kp SEMI
-&mt LEFT_SHIFT A  &mt LCTRL R  &mt LALT S  &mt LEFT_GUI T  &kp G    &kp M  &mt RGUI N  &mt RALT E  &mt RCTRL I  &mt RSHFT O
-&kp Z             &kp X        &kp C       &kp D           &kp V    &kp K  &kp H       &kp COMMA   &kp DOT      &kp FSLH
-&lt 3 TAB         &lt 1 SPACE                                                                      &lt 2 ENTER  &bsp_del
             >;
         };
     };

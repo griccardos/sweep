@@ -13,7 +13,7 @@
 
 ![image](keymap.svg)
 
-The starting point uses standard qwerty layout.
+The starting point uses standard keyboard layout.
 
 Homerow mods for modifiers
 
@@ -66,11 +66,11 @@ Homerow mods make multiple mods shortcuts easier to press e.g.
 - vscode CTRL+SHIFT+P or META+SHIFT+P
 - excel CTRL+SHIFT+7
 
-ESCAPE is on j+k, or holding Q
+ESCAPE is on index and middle finger on middle row
 
-CAPS_WORD is on y+u
+CAPS_WORD is on index and middle finger on top row
 
-DELETE is on SHIFT+BACKSPACE or m+,
+DELETE is on SHIFT+BACKSPACE or on index and middle finger on bottom row
 
 There is a lock layer for symbol/num layer, which locks you into the layer until you release the layer key. This allows for inputting numbers without holding layer key.
 
@@ -78,6 +78,5 @@ There is a lock layer for symbol/num layer, which locks you into the layer until
 
 When using the mouse for scrolling, navigating, we can still use some typically used shortcuts with the left hand:
 
-- hold Q for escape
 - ctrl+c copy, ctrl+v paste, ctrl+z undo. Hence why ctrl is on the ring finger. We do sacrifice ctrl+x cut which is not used as much.
 - alt+tab for switching windows
