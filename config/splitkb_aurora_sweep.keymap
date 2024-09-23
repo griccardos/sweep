@@ -64,7 +64,7 @@
         symbols {
             bindings = <
 &kp GRAVE       &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPS         &kp PLUS   &kp N7  &kp N8  &kp N9  &kp ASTERISK
-&kt LEFT_SHIFT  &kp QMARK       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE         &kp MINUS  &kp N4  &kp N5  &kp N6  &kp GREATER_THAN
+&kp LEFT_SHIFT  &kp QMARK       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE         &kp MINUS  &kp N4  &kp N5  &kp N6  &kp GREATER_THAN
 &dot_shift      &kp UNDERSCORE  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH    &kp EQUAL  &kp N1  &kp N2  &kp N3  &kp SLASH
 &to 0           &trans                                                                                                   &kp N0  &mt DOT BSPC
             >;
