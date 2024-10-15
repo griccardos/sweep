@@ -37,6 +37,11 @@
             key-positions = <13 23>;
             layers = <2>;
         };
+
+        esc2 {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+        };
     };
 
     macros {
@@ -71,10 +76,10 @@
 
         nav {
             bindings = <
-&none           &kp F7               &kp F8           &kp F9           &kp F10    &tog 0  &kp HOME   &kp UP     &kp END    &kp PAGE_UP
-&kp LEFT_SHIFT  &mt LEFT_CONTROL F4  &mt LEFT_ALT F5  &mt LEFT_GUI F6  &kp F11    &tog 1  &kp LEFT   &kp DOWN   &kp RIGHT  &kp PAGE_DOWN
-&none           &kp F1               &kp F2           &kp F3           &kp F12    &none   &mkp LCLK  &kp K_APP  &mkp RCLK  &none
-&none           &none                                                                                           &trans     &none
+&none           &kp F7               &kp F8           &kp F9           &kp F10    &none  &kp HOME   &kp UP     &kp END    &kp PAGE_UP
+&kp LEFT_SHIFT  &mt LEFT_CONTROL F4  &mt LEFT_ALT F5  &mt LEFT_GUI F6  &kp F11    &none  &kp LEFT   &kp DOWN   &kp RIGHT  &kp PAGE_DOWN
+&none           &kp F1               &kp F2           &kp F3           &kp F12    &none  &mkp LCLK  &kp K_APP  &mkp RCLK  &tog 1
+&none           &none                                                                                          &trans     &none
             >;
         };
 
