@@ -55,13 +55,12 @@
     };
 
     behaviors {
-       
-
         dot_oth: dot_oth {
             compatible = "zmk,behavior-tap-dance";
             label = "DOT_OTH";
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&kp EXCL>, <&kp QUESTION>;
+
             quick-tap-ms = <(-1)>;
             require-prior-idle-ms = <(-1)>;
             tapping-term-ms = <150>;
@@ -73,10 +72,10 @@
 
         colemak {
             bindings = <
-&kp Q                 &kp W        &kp F       &kp P           &kp B    &kp J  &kp L       &kp U       &kp Y        &kp SEMI
-&mt LSFT A  &mt LCTRL R  &mt LALT S  &mt LEFT_GUI T  &kp G    &kp M  &mt RGUI N  &mt RALT E  &mt RCTRL I  &mt RSFT O
-&kp Z                 &kp X        &kp C       &kp D           &kp V    &kp K  &kp H       &kp COMMA   &dot_oth     &kp SINGLE_QUOTE
-&lt 3 TAB             &lt 1 SPACE                                                                      &lt 2 ENTER  &mt LEFT_SHIFT BACKSPACE
+&kp Q             &kp W        &kp F       &kp P           &kp B    &kp J  &kp L       &kp U       &kp Y        &kp SEMI
+&mt LEFT_SHIFT A  &mt LCTRL R  &mt LALT S  &mt LEFT_GUI T  &kp G    &kp M  &mt RGUI N  &mt RALT E  &mt RCTRL I  &mt RIGHT_SHIFT O
+&kp Z             &kp X        &kp C       &kp D           &kp V    &kp K  &kp H       &kp COMMA   &dot_oth     &kp SINGLE_QUOTE
+&lt 3 TAB         &lt 1 SPACE                                                                      &lt 2 ENTER  &mt LEFT_SHIFT BACKSPACE
             >;
         };
 
