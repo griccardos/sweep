@@ -53,6 +53,33 @@
         };
     };
 
+    behaviors {
+        shft_a: shft_a {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SHFT_A";
+            bindings = <&kp LEFT_SHIPT>, <&kp A>;
+            require-prior-idle-ms = <-1>//remove this so can press space shift a to get a capital A, instead of ao
+            tapping-term-ms = <200>;
+        };
+
+        shft_o: shft_o {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SHFT_O";
+            bindings = <&kp RIGHT_SHIFT>, <&kp O>;
+            require-prior-idle-ms = <-1>//remove this so can press space shift a to get a capital A, instead of ao
+            tapping-term-ms = <200>;
+        };
+
+        dot_other: dot_other {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DOT_OTHER";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>,<&kp QUESTION>, <&kp EXCL> ;
+
+            tapping-term-ms = <150>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -101,4 +128,4 @@
             >;
         };
     };
-};
+ };
