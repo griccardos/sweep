@@ -58,6 +58,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "SHFT_A";
             bindings = <&kp LEFT_SHIPT>, <&kp A>;
+
             tapping-term-ms = <200>;
             quick-tap-ms = <(-1)>;
             require-prior-idle-ms = <(-1)>;
@@ -67,13 +68,13 @@
             compatible = "zmk,behavior-hold-tap";
             label = "SHFT_O";
             bindings = <&kp RIGHT_SHIFT>, <&kp O>;
-            quick-tap-ms = <(-1)>;
+
             tapping-term-ms = <200>;
         };
 
-        dot_other: dot_other {
+        dot_oth: dot_oth {
             compatible = "zmk,behavior-tap-dance";
-            label = "DOT_OTHER";
+            label = "DOT_OTH";
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&kp EXCL>, <&kp QUESTION>;
 
@@ -86,10 +87,10 @@
 
         colemak {
             bindings = <
-&kp Q             &kp W        &kp F       &kp P           &kp B    &kp J  &kp L       &kp U       &kp Y        &kp SEMI
-&mt LEFT_SHIFT A  &mt LCTRL R  &mt LALT S  &mt LEFT_GUI T  &kp G    &kp M  &mt RGUI N  &mt RALT E  &mt RCTRL I  &mt RSHFT O
-&kp Z             &kp X        &kp C       &kp D           &kp V    &kp K  &kp H       &kp COMMA   &kp DOT      &kp SINGLE_QUOTE
-&lt 3 TAB         &lt 1 SPACE                                                                      &lt 2 ENTER  &mt LEFT_SHIFT BACKSPACE
+&kp Q                 &kp W        &kp F       &kp P           &kp B    &kp J  &kp L       &kp U       &kp Y        &kp SEMI
+&shft_a LEFT_SHIFT A  &mt LCTRL R  &mt LALT S  &mt LEFT_GUI T  &kp G    &kp M  &mt RGUI N  &mt RALT E  &mt RCTRL I  &shft_o RSHFT O
+&kp Z                 &kp X        &kp C       &kp D           &kp V    &kp K  &kp H       &kp COMMA   &dot_oth     &kp SINGLE_QUOTE
+&lt 3 TAB             &lt 1 SPACE                                                                      &lt 2 ENTER  &mt LEFT_SHIFT BACKSPACE
             >;
         };
 
