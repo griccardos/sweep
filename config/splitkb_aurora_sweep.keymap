@@ -65,7 +65,7 @@
         no_idle: no_idle {
             compatible = "zmk,behavior-hold-tap";
             label = "NO_IDLE";
-            bindings = <&lt>, <&kp>;
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -80,10 +80,10 @@
 
         colemak {
             bindings = <
-&kp Q             &kp W             &kp F       &kp P           &kp B    &kp J  &kp L       &kp U       &kp Y        &kp SEMI
-&mt LEFT_SHIFT A  &mt LCTRL R       &mt LALT S  &mt LEFT_GUI T  &kp G    &kp M  &mt RGUI N  &mt RALT E  &mt RCTRL I  &mt RIGHT_SHIFT O
-&kp Z             &kp X             &kp C       &kp D           &kp V    &kp K  &kp H       &kp COMMA   &dot_oth     &kp SINGLE_QUOTE
-&lt 3 TAB         &no_idle 1 SPACE                                                                      &lt 2 ENTER  &mt LEFT_SHIFT BACKSPACE
+&kp Q                  &kp W        &kp F       &kp P           &kp B    &kp J  &kp L       &kp U       &kp Y        &kp SEMI
+&no_idle LEFT_SHIFT A  &mt LCTRL R  &mt LALT S  &mt LEFT_GUI T  &kp G    &kp M  &mt RGUI N  &mt RALT E  &mt RCTRL I  &no_idle RIGHT_SHIFT O
+&kp Z                  &kp X        &kp C       &kp D           &kp V    &kp K  &kp H       &kp COMMA   &dot_oth     &kp SINGLE_QUOTE
+&lt 3 TAB              &lt 1 SPACE                                                                      &lt 2 ENTER  &mt LEFT_SHIFT BACKSPACE
             >;
         };
 
