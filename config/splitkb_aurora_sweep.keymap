@@ -59,7 +59,31 @@
             compatible = "zmk,behavior-tap-dance";
             label = "DOT_OTH";
             #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp EXCL>, <&kp QUESTION>;
+            bindings = <&kp DOT>, <&kp QUESTION>, <&kp EXCL>;
+        };
+
+        lsft_a: lsft_a {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LSFT_A";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <(-1)>;
+            require-prior-idle-ms = <(-1)>;
+            flavor = "balanced";
+        };
+
+        rsft_o: rsft_o {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RSFT_O";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <(-1)>;
+            require-prior-idle-ms = <(-1)>;
+            flavor = "balanced";
         };
     };
 
