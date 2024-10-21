@@ -58,15 +58,16 @@
             compatible = "zmk,behavior-hold-tap";
             label = "SHFT_A";
             bindings = <&kp LEFT_SHIPT>, <&kp A>;
-            require-prior-idle-ms = <-1>//remove this so can press space shift a to get a capital A, instead of ao
             tapping-term-ms = <200>;
+            quick-tap-ms = <(-1)>;
+            require-prior-idle-ms = <(-1)>;
         };
 
         shft_o: shft_o {
             compatible = "zmk,behavior-hold-tap";
             label = "SHFT_O";
             bindings = <&kp RIGHT_SHIFT>, <&kp O>;
-            require-prior-idle-ms = <-1>//remove this so can press space shift a to get a capital A, instead of ao
+            quick-tap-ms = <(-1)>;
             tapping-term-ms = <200>;
         };
 
@@ -74,7 +75,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "DOT_OTHER";
             #binding-cells = <0>;
-            bindings = <&kp DOT>,<&kp QUESTION>, <&kp EXCL> ;
+            bindings = <&kp DOT>, <&kp EXCL>, <&kp QUESTION>;
 
             tapping-term-ms = <150>;
         };
@@ -128,4 +129,4 @@
             >;
         };
     };
- };
+};
