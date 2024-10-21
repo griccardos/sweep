@@ -58,7 +58,7 @@
         shft_a: shft_a {
             compatible = "zmk,behavior-hold-tap";
             label = "SHFT_A";
-            bindings = <&kp LEFT_SHIPT>, <&kp A>;
+            bindings = <&kp LEFT_SHIFT>, <&kp A>;
             tapping-term-ms = <200>;
             quick-tap-ms = <(-1)>;
             require-prior-idle-ms = <(-1)>;

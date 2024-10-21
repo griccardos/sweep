@@ -126,9 +126,7 @@ text.label, text.footer { stroke: black; }
 text.trans { fill: #7e8184; }
 path.combo { stroke: #7f7f7f; }
 
-}
-
-svg.keymap { background-color: #FFF; }</style>
+}</style>
 <g transform="translate(30, 0)" class="layer-colemak">
 <text x="0" y="28" class="label" id="colemak">colemak:</text>
 <g transform="translate(0, 56)">
