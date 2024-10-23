@@ -70,7 +70,7 @@
         dotques: dotques {
             compatible = "zmk,behavior-mod-morph";
             label = "DOTQUES";
-            bindings = <&kp KP_PERIOD>, <&kp QUESTION>;
+            bindings = <&kp PERIOD>, <&kp QUESTION>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
