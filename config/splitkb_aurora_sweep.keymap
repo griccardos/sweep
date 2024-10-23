@@ -59,6 +59,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "NO_IDLE";
             bindings = <&kp>, <&kp>;
+
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
@@ -69,8 +70,10 @@
         dotques: dotques {
             compatible = "zmk,behavior-mod-morph";
             label = "DOTQUES";
-            bindings = <&kp KP_DOT>, <&kp QUESTION>;
+            bindings = <&kp KP_PERIOD>, <&kp QUESTION>;
+
             #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
         };
     };
 
