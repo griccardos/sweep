@@ -59,7 +59,6 @@
             compatible = "zmk,behavior-hold-tap";
             label = "NO_IDLE";
             bindings = <&kp>, <&kp>;
-
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
@@ -71,9 +70,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "DOTQUES";
             bindings = <&kp KP_DOT>, <&kp QUESTION>;
-
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
         };
     };
 
