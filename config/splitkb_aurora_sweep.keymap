@@ -6,7 +6,7 @@
 
 &mt {
     flavor = "balanced";
-    quick-tap-ms = <150>;//for double tap backspace to repeat
+    quick-tap-ms = <190>;//for double tap backspace to repeat
     tapping-term-ms = <200>;
     require-prior-idle-ms = <120>;//higher value makes hold harder to trigger, cause it forces a tap instead if within this time. if correct with backspace, we may want a shift/mod so we set this to lowish
 };
