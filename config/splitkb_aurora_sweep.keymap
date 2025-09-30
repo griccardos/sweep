@@ -7,7 +7,7 @@
 &mt {
     flavor = "balanced";
     quick-tap-ms = <190>;//for double tap backspace to repeat
-    tapping-term-ms = <200>;
+    tapping-term-ms = <280>;
     require-prior-idle-ms = <120>;//higher value makes hold harder to trigger, cause it forces a tap instead if within this time. if correct with backspace, we may want a shift/mod so we set this to lowish
 };
 
@@ -103,7 +103,7 @@
             bindings = <
 &kp GRAVE            &kp TILDE         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPS         &kp PLUS   &none       &none        &none         &kp ASTERISK
 &mt LSHFT LESS_THAN  &kp GREATER_THAN  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE         &kp MINUS  &kp DOLLAR  &kp PERCENT  &kp CARET     &mt COMMA PERIOD
-&tog 1               &kp UNDERSCORE    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH    &kp EQUAL  &kp EXCL    &kp AT       &kp HASH      &kp SLASH
+&none                &kp UNDERSCORE    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH    &kp EQUAL  &kp EXCL    &kp AT       &kp HASH      &kp SLASH
 &to 0                &trans                                                                                                              &mt ENTER N0  &kp BACKSPACE
             >;
         };
@@ -112,17 +112,17 @@
             bindings = <
 &none           &kp F7               &kp F8           &kp F9           &kp F10    &none  &kp HOME   &kp UP     &kp END    &kp PAGE_UP
 &kp LEFT_SHIFT  &mt LEFT_CONTROL F4  &mt LEFT_ALT F5  &mt LEFT_GUI F6  &kp F11    &none  &kp LEFT   &kp DOWN   &kp RIGHT  &kp PAGE_DOWN
-&none           &kp F1               &kp F2           &kp F3           &kp F12    &none  &mkp LCLK  &kp K_APP  &mkp RCLK  &tog 1
+&none           &kp F1               &kp F2           &kp F3           &kp F12    &none  &mkp LCLK  &kp K_APP  &mkp RCLK  &none
 &none           &none                                                                                          &trans     &none
             >;
         };
 
         sys {
             bindings = <
-&sys_reset  &bt BT_CLR_ALL  &none           &none  &none    &kp C_VOLUME_UP    &kp C_NEXT        &none  &none   &none
-&none       &bt BT_NXT      &none           &none  &to 5    &kp C_VOLUME_DOWN  &kp C_PREV        &none  &none   &none
-&none       &kp KP_NUMLOCK  &kp SCROLLLOCK  &none  &none    &kp C_MUTE         &kp C_PLAY_PAUSE  &none  &none   &none
-&none       &trans                                                                                      &trans  &none
+&sys_reset  &bt BT_CLR_ALL  &none           &none  &tog 1    &kp C_VOLUME_UP    &kp C_NEXT        &none  &none   &none
+&none       &bt BT_NXT      &none           &none  &to 5     &kp C_VOLUME_DOWN  &kp C_PREV        &none  &none   &none
+&none       &kp KP_NUMLOCK  &kp SCROLLLOCK  &none  &none     &kp C_MUTE         &kp C_PLAY_PAUSE  &none  &none   &kp PRINTSCREEN
+&none       &trans                                                                                       &trans  &none
             >;
         };
 
